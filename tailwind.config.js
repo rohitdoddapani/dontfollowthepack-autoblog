@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: "#1b1b1b",
-        light: "#fff",
-        accent: "#7B00D3", 
-        accentDark: "#ffdb4d",
-        gray: "#747474",
-      }
+        light: '#EDE0D4',
+        primary: '#7F5539',
+        secondary: '#9C6644',
+        accent: '#B08968',
+        dark: '#4A2C21',  // Add a new dark color (deep brown)
+      },
     },
   },
   plugins: [],

@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={cx(inter.variable,manrope.variable, "font-mr bg-light ")}>
+      <body className={cx(inter.variable, manrope.variable, "font-mr bg-[#EDE0D4]")}>
         <Header />
         {children}
       </body>
