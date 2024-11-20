@@ -1,4 +1,5 @@
 // import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function RecentArticles({blogs}) {
 //   const [articles, setArticles] = useState([]);
@@ -21,10 +22,12 @@ export default function RecentArticles({blogs}) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogs.map((article) => (
             <div key={article.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img
+              <Image
                 src={article.image}
                 alt={article.title}
                 className="w-full h-48 object-cover"
+                width='100'
+                height='100'
               />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-[#7F5539]">{article.title}</h3>
