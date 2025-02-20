@@ -9,8 +9,8 @@ import Footer from '../Components/Footer/index.js';
 
 export async function getData() {
   try {
-    const { data , error } = await supabase.from('blogs_duplicate').select('*');
-    // console.log('Success:',blogs);
+    const { data , error } = await supabase.from('blogs').select('*').eq('published', true);
+    console.log('Success:',data);
     if (error) {
       throw error;
     }
@@ -27,8 +27,9 @@ export async function getData() {
 
 
 export default async function Page() {
+  console.log("Inside page.js -----------");
   const data = await getData();
-
+  console.log("Blogs:",data);
   if (data.isLoading) return <p>Loading...</p>;
   if (data.error) return <p>{data.error}</p>;
 

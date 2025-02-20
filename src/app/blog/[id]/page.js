@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Footer from '../../../Components/Footer/index.js';
 
 export default async function BlogPost({ params }) {
+  console.log("Inside single blog page.js -----------");
   const { id } = params;
   const blogId = id.split('-')[0]; // Extract the blog ID from the URL slug
 
@@ -21,12 +22,13 @@ export default async function BlogPost({ params }) {
   const { data: relatedPosts, err } = await supabase
     .from('blogs') // Adjust your table name if needed
     .select('*')
+    .eq('published', true)
     .limit(3)
 
   if (err || !relatedPosts) {
     notFound(); // Display 404 page if blog not found
   }else{
-    console.log(relatedPosts);
+    console.log("Inside single blog page.js relatedposts-----------",relatedPosts);
     
   }
 

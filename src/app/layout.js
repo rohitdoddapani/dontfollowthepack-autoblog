@@ -23,6 +23,7 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  console.log("Inside layout.js -----------");
   return (
     <html lang="en">
       <body className={cx(inter.variable, manrope.variable, "font-mr bg-[#EDE0D4]")}>
