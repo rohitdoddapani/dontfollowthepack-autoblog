@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Footer from '../../../Components/Footer/index.js';
 
 export default async function BlogPost({ params }) {
-  console.log("Inside single blog page.js -----------");
   const { id } = params;
   const blogId = id.split('-')[0]; // Extract the blog ID from the URL slug
 
@@ -98,7 +97,10 @@ export default async function BlogPost({ params }) {
         <div className="p-4">
             <h4 className="text-lg font-semibold text-[#7F5539] mb-2">{post.title}</h4>
             <p className="text-sm text-gray-500">{post.date}</p>
-            <a href={post.url} className="text-[#9C6644] font-semibold mt-2 inline-block">Read More</a>
+            {/* <a href={post.url} className="text-[#9C6644] font-semibold mt-2 inline-block">Read More</a> */}
+            <a href={`/blog/${post.id}-${post.title.replace(/\s+/g, '-').toLowerCase()}`} className="text-[#9C6644] font-semibold mt-4 inline-block">
+              Read More
+            </a>
         </div>
         </div>
     ))}

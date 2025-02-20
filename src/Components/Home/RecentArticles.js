@@ -18,7 +18,7 @@ export default function RecentArticles({blogs}) {
     <section className="py-16 bg-[#EDE0D4]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-8 text-[#7F5539]">Recent Articles</h2>
-        <p className="text-center text-[#9C6644] mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p className="text-center text-[#9C6644] mb-12">Latest Posts from the Pack – Keep Up with the Trends!</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogs.map((article) => (
             <div key={article.id} className="bg-white rounded-lg shadow-lg overflow-hidden">

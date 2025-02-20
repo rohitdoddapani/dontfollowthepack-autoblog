@@ -96,7 +96,7 @@ import { Logo } from './Logo';
 import Link from 'next/link';
 import { LinkedinIcon, TwitterIcon, GithubIcon, InstagramIcon } from '../Icons';
 
-export const Header = () => {
+export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
