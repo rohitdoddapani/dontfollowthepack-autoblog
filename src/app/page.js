@@ -1,9 +1,12 @@
 import Image from 'next/image'
 
 import supabase from '../utils/supabaseClient.js';
-import HomeCoverSection from '../components/Home/CoverSection.js';
-import RecentArticles from '../components/Home/RecentArticles.js';
-import Footer from '../components/Footer/index.js';
+// import HomeCoverSection from '../components/Home/CoverSection.js';
+// import RecentArticles from '../components/Home/RecentArticles.js';
+import HomeCoverSection from "@/components/Home/CoverSection"; 
+import RecentArticles from "@/components/Home/RecentArticles";
+
+import Footer from "@/components/Footer";
 // import { useState, useEffect } from 'react';
 
 
