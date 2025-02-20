@@ -1,7 +1,7 @@
 // import Header from "@/components/Header";
 // import Footer from "@/components/Footer";
-// import Footer from '../../Components/Footer/index.js';
-// import Header from '../../Components/Header/index.js';
+// import Footer from '../../components/Footer/index.js';
+// import Header from '../../components/Header/index.js';
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";

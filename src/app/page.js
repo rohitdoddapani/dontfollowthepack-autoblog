@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
 import supabase from '../utils/supabaseClient.js';
-import HomeCoverSection from '../Components/Home/CoverSection.js';
-import RecentArticles from '../Components/Home/RecentArticles.js';
-import Footer from '../Components/Footer/index.js';
+import HomeCoverSection from '../components/Home/CoverSection.js';
+import RecentArticles from '../components/Home/RecentArticles.js';
+import Footer from '../components/Footer/index.js';
 // import { useState, useEffect } from 'react';
 
 
@@ -27,9 +27,9 @@ export async function getData() {
 
 
 export default async function Page() {
-  console.log("Inside page.js -----------");
+  // console.log("Inside page.js -----------");
   const data = await getData();
-  console.log("Blogs:",data);
+  // console.log("Blogs:",data);
   if (data.isLoading) return <p>Loading...</p>;
   if (data.error) return <p>{data.error}</p>;
 

@@ -1,7 +1,7 @@
 import supabase from '../../../utils/supabaseClient';
 import { notFound } from 'next/navigation';
 import Image from 'next/image'
-import Footer from '../../../Components/Footer/index.js';
+import Footer from '../../../components/Footer/index.js';
 
 export default async function BlogPost({ params }) {
   const { id } = params;
